@@ -15,7 +15,7 @@ pageTurnBtn.forEach((el, index) => {
         else {
             pageTurn.classList.add('turn');
             setTimeout(() => {
-                pageTurn.style.zIndex = 20 - index;
+                pageTurn.style.zIndex = 20 + index;
             }, 500)
         }
     }
