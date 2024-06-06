@@ -22,16 +22,65 @@ pageTurnBtn.forEach((el, index) => {
     
 })
 
+const pages = document.querySelectorAll('.album-page.page-right');
+let totalPages = pages.length;
+let pageNumber = 0;
 
+function reverseIndex() {
+    pageNumber--;
+    if (pageNumber < 0) {
+        pageNumber = totalPages - 1;
+    }
+}
 
-
-//contact me button when click
-
-//create reverse index function
 
 //back profile button when click
 
-//opening animation
-//opening animation (cover right animation)
-//opening animation (page left or profile page animation)
-//opening animation (all page right animation)
+
+const backProfileBtn = document.querySelector('.back-profile');
+
+backProfileBtn.onclick = () => {
+    pages.forEach((_, index) => {
+        setTimeout(() => {
+            reverseIndex();
+            pages[pageNumber].classList.remove('turn');
+
+            setTimeout(() => {
+                reverseIndex();
+                pages[pageNumber].style.zIndex = 10 + index;
+            }, 500)
+        }, (index + 1 ) * 200 + 100)
+    })
+}
+
+//opening album animation
+const coverRight = document.querySelector('.cover.cover-right');
+const pageLeft = document.querySelector('album-page.page-left');
+
+//opening animation for (cover right animation)
+setTimeout(() =>{
+    coverRight.classList.add('turn');
+}, 2100)
+
+setTimeout(() =>{
+    coverRight.style.zIndex = -1;
+}, 2800)
+
+//opening animation (page left or profile page animation))
+setTimeout(() =>{
+    pageLeft.style.zIndex = 20;
+}, 3200)
+
+//opening animation for all (page right animation)
+pages.forEach((_, index) => {
+    setTimeout(() => {
+        reverseIndex();
+        pages[pageNumber].classList.remove('turn');
+
+        setTimeout(() => {
+            reverseIndex();
+            pages[pageNumber].style.zIndex = 10 + index;
+        }, 500)
+    }, (index + 1 ) * 200 + 2100)
+})
+
