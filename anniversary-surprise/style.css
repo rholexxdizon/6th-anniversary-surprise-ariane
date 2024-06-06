@@ -276,13 +276,11 @@ margin-bottom: .8rem;
   }
 }
 
-@media (max-width: 480px) {
-  .wrapper {
-    width: 90%;
-    height: auto;
-    padding: 1rem;
-    flex-direction: column;
-    align-items: center;
+@media (max-width: 425px) {
+  /* .wrapper {
+    width: 50rem;
+    height: 35rem;
+    padding: 1.5rem;
   }
 
   .album {
@@ -326,4 +324,34 @@ margin-bottom: .8rem;
     bottom: 1.5rem;
     right: 1.5rem;
   }
+} */
+
+.wrapper {
+  width: 40rem;
+  height: 30rem;
+  padding: 1rem;
+}
+
+.album .album-page {
+  padding: 1rem;
+}
+
+.greetings-page h1 {
+  font-size: 1.2rem;
+}
+
+.greetings-page p {
+  font-size: 10px;
+}
+
+.greetings-page img{
+  max-width:150px;
+  border: .25rem solid var(--main-color);
+  margin-bottom: .8rem;
+  }
+
+.album-page .page-back,
+.album-page .page-front{
+  font-size: 9px;
+}
 }
