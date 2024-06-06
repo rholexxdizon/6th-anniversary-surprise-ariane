@@ -41,6 +41,7 @@ body {
   animation: show-animate 2s forwards;
 }
 
+
 @keyframes show-animate {
   0%, 30%{
     opacity: 0;
@@ -231,4 +232,98 @@ margin-bottom: .8rem;
   opacity: 1;
   transform: translateX(-50%) scale(1);
   top: -1.8rem;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .wrapper {
+    width: 50rem;
+    height: 35rem;
+    padding: 1.5rem;
+  }
+
+  .greetings-page h1 {
+    font-size: 1.3rem;
+  }
+
+  .greetings-page p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 40rem;
+    height: 28rem;
+    padding: 1rem;
+  }
+
+  .album .album-page {
+    padding: 1rem;
+  }
+
+  .greetings-page h1 {
+    font-size: 1.2rem;
+  }
+
+  .greetings-page p {
+    font-size: 10px;
+  }
+
+  .album-page .page-back,
+  .album-page .page-front{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .album {
+    flex-direction: column;
+  }
+
+  .cover, .album .album-page {
+    width: 100%;
+    height: auto;
+  }
+
+  .album .album-page {
+    padding: 1rem;
+  }
+
+  .greetings-page img {
+    max-width: 150px;
+  }
+
+  .greetings-page h1 {
+    font-size: 1rem;
+  }
+
+  .greetings-page p {
+    font-size: 12px;
+  }
+
+  .nextprev-btn, .back-profile {
+    bottom: 1rem;
+    right: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .nextprev-btn.back {
+    left: 1rem;
+  }
+
+  .back-profile {
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
 }
