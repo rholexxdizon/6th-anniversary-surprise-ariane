@@ -281,11 +281,11 @@ margin-bottom: .8rem;
 .wrapper {
   width: 40rem;
   height: 27rem;
-  padding: 1rem;
+  padding: .7rem;
 }
 
 .album .album-page {
-  padding: 1rem;
+  padding: .7rem;
 }
 
 .greetings-page h1 {
@@ -294,8 +294,8 @@ margin-bottom: .8rem;
 
 .greetings-page p {
   font-size: 7px;
+  
 }
-
 .greetings-page img{
   max-width:150px;
   border: .25rem solid var(--main-color);
