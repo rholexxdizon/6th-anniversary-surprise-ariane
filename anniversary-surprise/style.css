@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap');
 
 * {
   margin: 0;
@@ -107,7 +110,7 @@ body {
 }
 
 .greetings-page img{
-max-width:180px;
+max-width:300px;
 border: .25rem solid var(--main-color);
 margin-bottom: .8rem;
 }
@@ -116,13 +119,16 @@ margin-bottom: .8rem;
   font-size: 1.5rem;
   line-height: 1;
   margin-bottom:20px;
+  font-family: "Oleo Script", system-ui;
+  font-weight: 600;
+  font-style: normal;
 }
 
-.greetings-page p{
-  font-size: 15px;
-  color: var(--main-color);
+.greetings-page #p-greetings{
+  font-size: 14px;
+  color: black;
   text-align:justify;
-  line-height: 1;
+  line-height: 1.3;
   
 }
 
@@ -133,6 +139,42 @@ margin-bottom: .8rem;
   transform-origin: left;
   transition: transform 1s cubic-bezier(.645, .045, .355, 1);
 }
+
+.album-page.page-right img{
+  max-width:180px;
+  border: .25rem solid var(--main-color);
+  margin-bottom: .8rem;
+  margin-left:22px;
+  }
+
+  .album-page.page-right #span-adventure-1{
+    position: absolute;
+    right: 3rem;
+    top: 7rem;
+    font-size: .7rem;
+    }
+
+    .album-page.page-right #span-adventure-2{
+    position: absolute;
+    right: 3rem;
+    top: 8rem;
+    font-size: 1rem;
+    font-family: "Advent Pro", sans-serif;
+    font-weight: 600;
+    justify-content: center;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+    }
+
+    .album-page.page-right #span-adventure-3{
+      position: absolute;
+      right: 5rem;
+      font-size: 1rem;
+      font-family: "Advent Pro", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      }
 
 .album-page.page-right.turn{
   transform: rotateY(-180deg);
@@ -392,15 +434,18 @@ margin-bottom: .8rem;
   padding: 1rem;
 }
 
-.album .album-page {
+/* .album .album-page {
   padding: .7rem;
-}
+} */
 
 .greetings-page h1 {
-  font-size: .5rem;
+  font-size: .75rem;
+  font-family: "Oleo Script", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
-.greetings-page p {
+.greetings-page #p-greetings {
   font-size: .3rem;
 }
 .greetings-page img{
@@ -409,9 +454,15 @@ margin-bottom: .8rem;
   margin-bottom: .8rem;
   }
 
+/* .greetings-page #iframe-spotify {
+  width: 100%;
+  height:100%;
+  background-color: red;
+  padding-bottom: 50px;
+  }  */
+
 .album-page .page-back,
 .album-page .page-front{
-  
   font-size: .3rem;
 }
 
@@ -421,9 +472,54 @@ margin-bottom: .8rem;
 }
 .album-page .page-back h1,
 .album-page .page-front h1{
-  font-size: .4rem;
+  font-size: .7rem;
+  line-height: .6rem;
+  margin: 0 0 5px 0px;
 }
 
+
+.album-page.page-right img{
+  background-color: red;
+  display:flex;
+  align-items: center;
+  margin:0 0 7px 10px;
+  max-width:60px;
+  border: .25rem solid var(--main-color);
+  
+  }
+
+  .album-page.page-right #span-adventure-1{
+    position: absolute;
+    right: .5rem;
+    top: 5rem;
+    font-size: .3rem;
+    writing-mode: vertical-lr; 
+    }
+
+    .album-page.page-right #span-adventure-2{
+    position: absolute;
+    right: 1rem;
+    top: 7rem;
+    font-size: .5rem;
+    font-family: "Advent Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      writing-mode: vertical-rl; 
+    }
+
+    .album-page.page-right #span-adventure-3{
+      position: absolute;
+      right:6.5rem;
+      bottom: 5rem;
+      font-size: .5rem;
+      font-family: "Advent Pro", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+        writing-mode: vertical-rl; 
+      }
 
 .back-profile {
   width: 1.4rem;
@@ -459,6 +555,7 @@ margin-bottom: .8rem;
   left:50%;
   transform: translateX(-50%);
 }
+
 
 }
 

@@ -84,3 +84,10 @@ pages.forEach((_, index) => {
     }, (index + 1 ) * 200 + 2100)
 })
 
+// //iframe
+
+// window.onload = function() {
+//     var iframe = document.getElementById("iframe-spotify");
+//     iframe.width = iframe.contentWindow.document.body.scrollWidth;
+//     iframe.height = iframe.contentWindow.document.body.scrollHeight;
+// }
