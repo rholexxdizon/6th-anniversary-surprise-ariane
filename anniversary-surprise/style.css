@@ -56,6 +56,9 @@ body {
   }
 }
 
+.desktop-only{
+  opacity:0;
+}
 .cover {
   position: absolute;
   top: 0;
@@ -357,11 +360,17 @@ margin-bottom: .8rem;
 }
 
 /* Media Queries */
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
+
+  .desktop-only{
+    opacity: 1;
+  }
   .wrapper {
+    display:none;
     width: 50rem;
     height: 35rem;
     padding: 1.5rem;
+    opacity:0;
   }
 
   .greetings-page h1 {
@@ -374,7 +383,12 @@ margin-bottom: .8rem;
 }
 
 @media (max-width: 768px) {
+
+  .desktop-only{
+    opacity: 1;
+  }
   .wrapper {
+    display:none;
     width: 40rem;
     height: 28rem;
     padding: 1rem;
@@ -399,12 +413,19 @@ margin-bottom: .8rem;
 }
 
 
+
+
   
 
 
 
 @media (max-width: 768px) {
+
+  .desktop-only {
+    opacity: 1;
+  }
   .wrapper {
+    display:none;
     width: 40rem;
     height: 25rem;
     padding: 1rem;
@@ -536,7 +557,11 @@ margin-bottom: .8rem;
 
 @media (min-width: 321px) and (max-width: 425px) {
 
+  .desktop-only{
+    opacity: 1;
+  }
   .wrapper {
+    display: none;
     width: 40rem;
     height: 25rem;
     padding: 1rem;
@@ -670,8 +695,11 @@ margin-bottom: .8rem;
   
 
   @media (max-width: 375px) {
-
+    .desktop-only{
+      opacity: 1;
+    }
     .wrapper {
+      display:none;
       width: 40rem;
       height: 25rem;
       padding: 1rem;
@@ -820,7 +848,11 @@ margin-bottom: .8rem;
     
 @media (max-width: 320px) {
 
+  .desktop-only{
+    opacity: 1;
+  }
 .wrapper {
+  display:none;
   width: 40rem;
   height: 25rem;
   padding: 1rem;
