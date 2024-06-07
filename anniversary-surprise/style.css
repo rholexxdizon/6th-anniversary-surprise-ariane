@@ -464,7 +464,7 @@ margin-bottom: .8rem;
   
 }
 
-@media (max-width: 425px) {
+@media (min-width: 321px) and (max-width: 425px) {
 
   .wrapper {
     width: 40rem;
@@ -598,6 +598,153 @@ margin-bottom: .8rem;
   
   }
   
+
+  @media (max-width: 375px) {
+
+    .wrapper {
+      width: 40rem;
+      height: 25rem;
+      padding: 1rem;
+    }
+    
+    /* .album .album-page {
+      padding: .7rem;
+    } */
+    
+    .greetings-page h1 {
+      font-size: 1rem;
+      font-family: "Oleo Script", system-ui;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .greetings-page #p-greetings {
+      font-size: .4rem;
+    }
+    .greetings-page img{
+      max-width:130px;
+      border: .25rem solid var(--main-color);
+      margin-bottom: .8rem;
+      }
+    
+    /* .greetings-page #iframe-spotify {
+      width: 100%;
+      height:100%;
+      background-color: red;
+      padding-bottom: 50px;
+      }  */
+    
+    .album-page .page-back,
+    .album-page .page-front{
+      font-size: .3rem;
+    }
+    
+    .album-page .page-back p,
+    .album-page .page-front p{
+      margin-top: .7rem;
+    }
+    .album-page .page-back h1,
+    .album-page .page-front h1{
+      font-size: .9rem;
+      line-height: .8rem;
+      margin: 0 0 8px 0px;
+    }
+    
+    
+    .album-page.page-right img{
+      background-color: red;
+      display:flex;
+      align-items: center;
+      margin:0 0 7px 25px;
+      max-width:60px;
+      border: .25rem solid var(--main-color);
+      
+      }
+    
+      .album-page.page-right #span-adventure-1{
+        position: absolute;
+        right: 1rem;
+        top: 5rem;
+        font-size: .4rem;
+        writing-mode: vertical-lr; 
+        }
+    
+        .album-page.page-right #span-adventure-2{
+        position: absolute;
+        right: 1.7rem;
+        top: 9rem;
+        font-size: .5rem;
+        font-family: "Advent Pro", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
+          writing-mode: vertical-rl; 
+        }
+    
+        .album-page.page-right #span-adventure-3{
+          position: absolute;
+          right:7.5rem;
+          bottom: 5rem;
+          font-size: .35rem;
+          font-family: "Advent Pro", sans-serif;
+          font-weight: 400;
+          font-style: normal;
+            writing-mode: horizontal-tb; 
+          }
+
+          .album-page.page-right #span-foodtrip-1{
+            position: absolute;
+            right: 1rem;
+            bottom:6rem;
+            font-size: .7rem;
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+            margin: 20px 0 0 0;
+            writing-mode: vertical-rl; 
+            
+            }
+    
+    .back-profile {
+      width: 1.4rem;
+      height: 1.4rem;
+      font-size: .7rem;
+      right:.7rem;
+      bottom:.8rem;
+    }
+    
+    .back-profile p {
+      font-size: .5rem;
+    }
+    
+    .back-profile:hover p {
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+      top: -1.5rem;
+    }
+    
+    .nextprev-btn {
+      right: 1.1rem;
+      width: .7rem;
+      height: 1.1rem;
+    }
+    
+    .nextprev-btn.back{
+      left: 1.1rem;
+    }
+    
+    .number-page {
+      bottom: 1rem;
+      font-size: .5rem;
+      left:50%;
+      transform: translateX(-50%);
+    }
+    
+    
+    }
+    
 @media (max-width: 320px) {
 
 .wrapper {
