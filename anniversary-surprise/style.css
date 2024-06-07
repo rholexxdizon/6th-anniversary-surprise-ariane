@@ -120,7 +120,7 @@ margin-bottom: .8rem;
   line-height: 1;
   margin-bottom:20px;
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   font-style: normal;
 }
 
@@ -147,6 +147,58 @@ margin-bottom: .8rem;
   margin-left:22px;
   }
 
+  .album-page.page-right #last-page{
+    max-width:115px;
+    border: .25rem solid var(--main-color);
+    margin-bottom: .8rem;
+    margin-left:22px;
+    }
+
+  .album-page.page-right #car{
+    display:block;
+    margin:auto;
+    max-width:50px;
+    border: none;
+    }
+
+    .album-page.page-right #emoji-lol{
+      display:block;
+      margin:auto;
+      border:none;
+      }
+
+      .album-page.page-right #and{
+        font-size:1rem;
+        font-weight: 300;
+        padding-right: 5px;
+        }
+      .album-page.page-right #end-message{
+          font-size:.7rem;
+          text-align: justify;
+          font-weight: 300;
+          text-align: center;
+          }
+
+          .album-page.page-right #end-message span{
+            font-size:.7rem;
+            font-weight: 600;
+            }
+          .album-page.page-right #heart{
+            display:block;
+            margin:auto;
+            border:none;
+            height: 50px;
+            }
+            .album-page.page-right #kiss{
+              position:absolute;
+              right:10.7rem;
+              bottom:6.3rem;
+              border:none;
+              height: 15px;
+              }
+
+
+
   .album-page.page-right #span-adventure-1{
     position: absolute;
     right: 3rem;
@@ -169,22 +221,25 @@ margin-bottom: .8rem;
 
     .album-page.page-right #span-adventure-3{
       position: absolute;
-      right: 5rem;
+      right: 3.8em;
       font-size: 1rem;
       font-family: "Advent Pro", sans-serif;
-      font-weight: 400;
+      font-weight: 500;
       font-style: normal;
       }
 
       .album-page.page-right #span-foodtrip-1{
         position: absolute;
-        right: 3.5rem;
+        left: 4.4rem;
         font-size: 1rem;
-        font-family: "Josefin Sans", sans-serif;
+        font-family: "Advent Pro", sans-serif;
         font-weight: 500;
         font-style: normal;
         margin: 20px 0 0 0;
         }
+      
+      
+
 
 .album-page.page-right.turn{
   transform: rotateY(-180deg);
@@ -212,6 +267,7 @@ margin-bottom: .8rem;
 .title {
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 1.5rem;
 }
  
 .number-page {
