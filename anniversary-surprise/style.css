@@ -150,9 +150,14 @@ margin-bottom: .8rem;
   .album-page.page-right #last-page{
     max-width:115px;
     border: .25rem solid var(--main-color);
-    margin-bottom: .8rem;
-    margin-left:22px;
+    margin-bottom: 0;
+    padding:0;
     }
+
+    .album-page.page-right .last-page-h1{
+      margin-bottom: 90px;
+    }
+
 
   .album-page.page-right #car{
     display:block;
@@ -182,23 +187,32 @@ margin-bottom: .8rem;
           .album-page.page-right #end-message span{
             font-size:.7rem;
             font-weight: 600;
+            padding:0;
+            margin:0;
             }
           .album-page.page-right #heart{
-            display:block;
-            margin:auto;
+            position:absolute;
+            right: 14.5rem;
+            bottom:1.7rem;
             border:none;
-            height: 50px;
+            height: 30px;
             }
             .album-page.page-right #kiss{
               position:absolute;
               right:10.7rem;
-              bottom:6.3rem;
+              bottom:3.3rem;
               border:none;
               height: 15px;
               }
+              .album-page.page-right #iframe-spotify{
+                position: absolute;
+                block-size: fit-content;
+                width:fit-content;
+                top:3.8rem;
+                right:6rem;
+                }           
 
-
-
+              
   .album-page.page-right #span-adventure-1{
     position: absolute;
     right: 3rem;
@@ -762,6 +776,9 @@ margin-bottom: .8rem;
             writing-mode: vertical-rl; 
             
             }
+
+
+            
     
     .back-profile {
       width: 1.4rem;
