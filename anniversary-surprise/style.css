@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Tiny5&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -119,7 +119,7 @@ margin-bottom: .8rem;
   font-size: 1.5rem;
   line-height: 1;
   margin-bottom:20px;
-  font-family: "Oleo Script", system-ui;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
   font-style: normal;
 }
@@ -175,6 +175,16 @@ margin-bottom: .8rem;
       font-weight: 400;
       font-style: normal;
       }
+
+      .album-page.page-right #span-foodtrip-1{
+        position: absolute;
+        right: 3.5rem;
+        font-size: 1rem;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        margin: 20px 0 0 0;
+        }
 
 .album-page.page-right.turn{
   transform: rotateY(-180deg);
@@ -510,24 +520,24 @@ margin-bottom: .8rem;
     background-color: red;
     display:flex;
     align-items: center;
-    margin:0 0 7px 10px;
-    max-width:60px;
+    margin:0 0 7px 35px;
+    max-width:65px;
     border: .25rem solid var(--main-color);
     
     }
   
     .album-page.page-right #span-adventure-1{
       position: absolute;
-      right: .5rem;
+      right: 1rem;
       top: 5rem;
-      font-size: .3rem;
+      font-size: .4rem;
       writing-mode: vertical-lr; 
       }
   
       .album-page.page-right #span-adventure-2{
       position: absolute;
-      right: 1rem;
-      top: 7rem;
+      right: 2rem;
+      top: 10rem;
       font-size: .5rem;
       font-family: "Advent Pro", sans-serif;
       font-optical-sizing: auto;
@@ -540,14 +550,15 @@ margin-bottom: .8rem;
   
       .album-page.page-right #span-adventure-3{
         position: absolute;
-        right:6.5rem;
+        right:8.1rem;
         bottom: 5rem;
-        font-size: .5rem;
+        font-size: .45rem;
         font-family: "Advent Pro", sans-serif;
         font-weight: 400;
         font-style: normal;
-          writing-mode: vertical-rl; 
+        writing-mode: horizontal-tb; 
         }
+        
   
   .back-profile {
     width: 1.4rem;
